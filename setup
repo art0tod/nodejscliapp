@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+sudo touch /usr/local/bin/miroka
+sudo echo "node $(pwd)" > /usr/local/bin/miroka
+sudo chmod 777 /usr/local/bin/miroka
