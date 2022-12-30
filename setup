@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+npm i
+
 sudo touch /usr/local/bin/miroka
+sudo mkdir ~/.config/miroka
+sudo mkdir ~/.config/miroka/content
+sudo mkdir ~/.config/miroka/DB
+sudo cp src/DB/wordsDB_ru.txt ~/.config/miroka/DB
 sudo echo "node $(pwd)" > /usr/local/bin/miroka
-sudo chmod 777 /usr/local/bin/miroka
+sudo chmod 755 /usr/local/bin/miroka
