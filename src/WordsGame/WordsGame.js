@@ -1,13 +1,10 @@
 import inquirer from "inquirer"
-import fs from 'fs'
-import process from "process";
-import os from 'os'
+import fs from 'fs';
+import os from 'os';
+
+import Greeting from "../Greeting/Greeting.js";
 
 export default function WordsGame() {
-	// console.log();
-	// fs.readFile(`${os.homedir()}/.config/miroka/DB/wordsDB_ru.txt`, 'utf-8', (error, data) => {
-
-	// })
 	inquirer
 		.prompt([
 			{
@@ -17,6 +14,8 @@ export default function WordsGame() {
 			}
 		])
 		.then(answers => {
-			console.log(0)
+			fs.readFile(`${os.homedir()}/.config/miroka/DB/wordsDB_ru.txt`, 'utf-8', (error, data) => {
+				console.log(data);
+			})
 		})
 }

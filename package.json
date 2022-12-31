@@ -19,6 +19,7 @@
 		"inquirer": "^9.1.4",
 		"nanospinner": "^1.1.0",
 		"pixiv-app-api": "^1.2.1",
+		"say": "^0.16.0",
 		"ui": "^0.2.4"
 	}
 }
